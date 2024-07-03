@@ -1,0 +1,40 @@
+ekrani:
+
+registracija-login (bez prijave nije moguce pristupiti ostatku aplikacije)
+glavna stranica (objave prijatelja, objave iz grupa kojima pripada)
+profil (promena lozinke, dodavanje slike, prikazati spisak grupa kojima pripada)
+search ljudi/dodavanje prijatelja
+grupa (admin grupe prihvata/odbija zahteve za pridruzivanje)
+
+
+
+
+
+
+
+
+entiteti:
+
+1. Objava: moze da sadrzi slike, tekst, PDF sadrzaj objave
+2. Komentar: moguc reply na reply na ...
+
+
+
+
+1. -Moguce reagovati na objave i komentare sa: like, dislike i srce
+
+2. -Moguce sortirati objave
+
+3. -Svaki registrovani korisnik moze da napravi grupu, on odmah postaje admin te grupe. 
+-Prilikom kreiranja grupe korisnik upload-uje PDF dokument sa opisom grupe?
+-Jedino administrator sistema ima pravo da suspenduje (logički obriše) grupu
+-Svaki korisnik može da napravi zahtev da postane član grupe. Zahtev odobrava 
+Administrator grupe (vidi M2). Svaki član grupe može da prati i kreira objave unutar 
+grupe.
+
+4. Pregled početne stranice. Registrovani korisnici na početnoj stranici vide 
+nasumične objave koje su javne (svoje i objave svojih prijatelja) ili nasumične 
+objave iz nasumičnih grupa kojima pripada. Pored objave nalazi se link koji vodi 
+ka datoj grupi ukoliko je objava iz grupe. Pod javnom objavom se misli na objavu 
+koju korisnik kreira van grupe i ona je javna tj. vidljiva na nivou cele aplikacije
+

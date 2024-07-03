@@ -1,0 +1,44 @@
+http://localhost:9200/usergroup
+
+{
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 1,
+    "analysis": {
+      "analyzer": {
+        "serbian_analyzer": {
+          "tokenizer": "standard",
+          "filter": ["lowercase", "icu_folding"]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "name": {
+        "type": "text",
+        "analyzer": "serbian_analyzer"
+      },
+      "description": {
+        "type": "text",
+        "analyzer": "serbian_analyzer"
+      },
+      "posts": {
+        "type": "nested",
+        "properties": {
+          "content": {
+            "type": "text",
+            "analyzer": "serbian_analyzer"
+          },
+          "creationDate": {
+            "type": "date"
+          }
+        }
+      },
+      "pdfContent": {
+        "type": "text",
+        "analyzer": "serbian_analyzer"
+      }
+    }
+  }
+}
